@@ -6,10 +6,10 @@
 </head>
 <body>
 <header>
-    <img src="webLogo.png" width="200" height="100">
+    <img src="webLogo.png" width="200" height="100" alt="picture">
     <h1>Основы Web-технологий</h1>
-</header>
-<nav>
+
+ <nav>
     <ul>
         <li><a href="htmldz1.html">Главная</a></li>
         <li><a href="htmldz2.html">Web-технологии</a>
@@ -23,8 +23,9 @@
         <li><a href="htmldz7.html">Текст</a></li>
 
     </ul>
-</nav>
-<section>
+ </nav>
+</header>
+<form>
 Какой тег предназначен для создания ссылок:<br>
 
 <input type="radio" name="teglink"/>&#60;a&#62;<br>
@@ -33,27 +34,37 @@
 <input type="radio" name="teglink"/>&#60;ref/&#62;<br>
 
 Какой тег предназначен для создания нумерованного списка:<br>
+
 <input type="radio" name="teglists"/>&#60;li&#62;<br>
 <input type="radio" name="teglists"/>&#60;dl&#62;<br>
 <input type="radio" name="teglists"/>&#60;ol&#62;<br>
 <input type="radio" name="teglists"/>&#60;ul&#62;<br>
+
 Какой тег предназначен для передачи служебной информации браузеру:<br>
+
 <input type="radio" name="tegmeta"/>&#60;info&#62;<br>
 <input type="radio" name="tegmeta"/>&#60;info/&#62;<br>
 <input type="radio" name="tegmeta"/>&#60;meta&#62;<br>
 <input type="radio" name="tegmeta"/>&#60;meta/&#62;<br>
+
 Какие теги используются при создании таблицы:<br>
+
 <input type="checkbox" name="tegtable"/>&#60;bodyt&#62;<br>
 <input type="checkbox" name="tegtable"/>&#60;td&#62;<br>
 <input type="checkbox" name="tegtable"/>&#60;caption&#62;<br>
 <input type="checkbox" name="tegtable"/>&#60;column&#62;<br>
+
 Какие атрибуты используются при создании форм:<br>
+
 <input type="checkbox" name="tegform"/>autocomplete<br>
 <input type="checkbox" name="tegform"/>action<br>
 <input type="checkbox" name="tegform"/>charset<br>
 <input type="checkbox" name="tegform"/>validate<br>
-</section>
-<p><button>Результат</button></p>
+    <p>
+        <input type="button" name="button" value="Результат">
+    </p>
+</form>
+
 
 <footer>
     <address>
