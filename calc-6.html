@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link  type="text/css" rel="stylesheet" href="dzstylecss.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="calcJS.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header class="top" >
+    <img src="webLogo.png" width="250" height="150" alt="picture">
+    <h1>Основы Web-технологий</h1>
+    <div class="top-menu">
+        <ul>
+            <li><a href="index-1.html">Главная</a></li>
+            <li>
+                <a  href="Web-2.html">Web-технологии</a>
+                <ul>
+                    <li><a href="HTML5-3.html" >HTML5</a></li>
+                    <li><a href="CSS3-4.html" >CSS3</a></li>
+                    <li><a href="JS-5.html" >JavaScript</a></li>
+           </ul>
+            </li>
+            <li><a href="calc-6.html">Калькулятор</a></li>
+            <li><a href="Test-7.html">Тест</a></li>
+        </ul>
+    </div>
+</header>
+</div>
+<form action="" name="calculator" class="calc"><div id="message"></div>
+    <table>
+        <tr>
+            <td colspan="5" class="text">
+                <input type="text"  name="display" value="0"  maxlength="10">
+            </td><!--дисплей-->
+        </tr>
+        <tr>
+            <td><input type="button"  onclick="inputBotton(this.value);" name="7" value="7" ></td>
+            <td><input type="button"  onclick="inputBotton(this.value);" name="8" value="8" ></td>
+            <td><input type="button"  onclick="inputBotton(this.value);" name="9" value="9" ></td>
+            <td><input type="button"  onclick="calculating(this.value);"  name="/" value="/" ></td>
+            <td><input type="button" onclick="buttonclear()" name="c" value="c" ></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" onclick="inputBotton(this.value);" name="4" value="4" ></td>
+            <td><input type="button" onclick="inputBotton(this.value);" name="5" value="5" ></td>
+            <td><input type="button" onclick="inputBotton(this.value);" name="6" value="6" ></td>
+            <td><input type="button" onclick="calculating(this.value);" name="*" value="*" ></td>
+            <td><input type="button" onclick="buttonminusplus()" name="&plusmn;" value="&plusmn;" ></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="inputBotton(this.value);" name="1" value="1"></td>
+            <td><input type="button" onclick="inputBotton(this.value);" name="2" value="2"></td>
+            <td><input type="button" onclick="inputBotton(this.value);" name="3" value="3"></td>
+            <td><input type="button" onclick="calculating(this.value);"  name="-" value="-"></td>
+            <td rowspan="2" class="equally"><input type="button" onclick="buttonequally();" name="equally" value="="></td>
+        </tr>
+
+        <tr >
+            <td colspan="2" class="zero"><input type="button" onclick="inputBotton(this.value);" name="0" value="0"></td>
+            <td><input type="button"  onclick="calculating(this.value);"  name="+" value="+"></td>
+            <td><input type="button" name="." onclick="buttondot()"  value="."></td>
+
+        </tr>
+    </table>
+    <input type="text" name="operation" id="operation" value="0"> <!--Этот элемент будет служить для записи в память операции и будет скрыт-->
+    <input type="text" name="numberMemory" id="numberMemory" value="0"><!--Этот элемент будет служить для записи в память числа и будет скрыт-->
+</form>
+
+<footer class="my-foot">
+    <address>
+        <a href="#">Пишите:mail@mail</a>
+    </address>
+    © Фамилия И.О.,год
+
+</footer>
+
+</body>
+</html>
