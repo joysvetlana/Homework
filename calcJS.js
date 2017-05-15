@@ -1,17 +1,15 @@
 
 var Num1,Num2,Operetion;
-var action = "+";
-//функция вывода кнопок на экран
+var action;
+
 function getValue(id) {
     var res = document.getElementById(id).value - 0;
     if (!isNaN(res))
         return res;
     alert("В элементе " + id + " не численное значение!!!");
 }
-
 function PutNum(inputValue) {
     document.getElementById("display").value = (document.getElementById("display").value + inputValue)-0;
-
 }
 //функция для "+"
 function operetionPlus() {
@@ -28,7 +26,7 @@ function subtraction() {
 //функция для "*"
 function operetionMultipli() {
     Num1 = getValue("display");
-    document.getElementById("display").value = 0;
+    document.getElementById("display").value =0;
     action = "*";
 }
 //функция для "/"
@@ -37,13 +35,12 @@ function division() {
     document.getElementById("display").value =0;
     action = "/";
 }
-
 //функция для равно
 function equally() {
     Num2 = getValue("display");
         switch(action) {
             case "+":
-                Operetion =Num1+ Num2;
+                Operetion =Num1 + Num2;
                 break;
             case "-":
                 Operetion = Num1 - Num2;
@@ -62,14 +59,11 @@ function equally() {
         }
         document.getElementById("display").value = Operetion;
 }
-
-
 //функция для "."
 function buttondot() {
     if(document.calculator.display.value.indexOf(".")===-1 && document.calculator.display.value.length>=1 ){
     document.calculator.display.value +=".";}
 }
-
 //функция для "с"
 function buttonclear() {
     document.calculator.display.value ="";
@@ -79,9 +73,7 @@ function buttonclear() {
 function buttonminusplus() {
     document.calculator.display.value = 0-document.calculator.display.value;
 }
-
 window.onload = function () {
-
     for (var i = 0; i < 10; i++) {
         (function (inputValue) {
             document.getElementById("input_" + inputValue).onclick = function () {

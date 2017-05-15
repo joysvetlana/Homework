@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link  type="text/css" rel="stylesheet" href="dzstylecss.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="tempjs.js"></script>
+</head>
+<body>
+<div class="wrapper">
+ <header class="top">
+    <img src="webLogo.png" width="250" height="150" alt="picture">
+    <h1>Основы Web-технологий</h1>
+    <div class="top-menu">
+        <ul>
+            <li><a href="index-1.html">Главная</a></li>
+            <li>
+                <a  href="Web-2.html">Web-технологии</a>
+                <ul>
+                    <li><a href="HTML5-3.html" >HTML5</a></li>
+                    <li><a href="CSS3-4.html" >CSS3</a></li>
+                    <li><a href="JS-5.html" >JavaScript</a></li>
+                </ul>
+            </li>
+            <li><a href="calc-6.html">Калькулятор</a></li>
+            <li><a href="Test-7.html">Тест</a></li>
+        </ul>
+    </div>
+ </header>
+</div >
+<form name="test" class="my-test">
+    Какой тег предназначен для создания ссылок:<br>
+
+    <input type="radio" name="teglink" value="a"/>&#60;a&#62;<br><!--ответ -->
+    <input type="radio" name="teglink" value="/a"/>&#60;a/&#62;<br>
+    <input type="radio" name="teglink" value="ref"/>&#60;ref&#62;<br>
+    <input type="radio" name="teglink" value="ref/"/>&#60;ref/&#62;<br>
+
+    Какой тег предназначен для создания нумерованного списка:<br>
+
+    <input type="radio" name="teglists" value="li"/>&#60;li&#62;<br>
+    <input type="radio" name="teglists" value="dl"/>&#60;dl&#62;<br>
+    <input type="radio" name="teglists" value="ol"/>&#60;ol&#62;<br><!--ответ -->
+    <input type="radio" name="teglists" value="ul"/>&#60;ul&#62;<br>
+
+    Какой тег предназначен для передачи служебной информации браузеру:<br>
+
+    <input type="radio" name="tegmeta" value="info"/>&#60;info&#62;<br>
+    <input type="radio" name="tegmeta" value="info/"/>&#60;info/&#62;<br>
+    <input type="radio" name="tegmeta" value="meta"/>&#60;meta&#62;<br>
+    <input type="radio" name="tegmeta" value="meta/"/>&#60;meta/&#62;<br><!--ответ -->
+
+    Какие теги используются при создании таблицы:<br>
+
+    <input type="checkbox" name="tegtable" value="bodyt"/>&#60;bodyt&#62;<br>
+    <input type="checkbox" name="tegtable" value="td"/>&#60;td&#62;<br><!--ответ -->
+    <input type="checkbox" name="tegtable" value="caption"/>&#60;caption&#62;<br><!--ответ -->
+    <input type="checkbox" name="tegtable" value="column"/>&#60;column&#62;<br>
+
+    Какие атрибуты используются при создании форм:<br>
+
+    <input type="checkbox" name="tegform" value="autocomplete"/>autocomplete<br><!--ответ -->
+    <input type="checkbox" name="tegform" value="action"/>action<br><!--ответ -->
+    <input type="checkbox" name="tegform" value="charset"/>charset<br>
+    <input type="checkbox" name="tegform" value="validate"/>validate<br>
+    <p>
+        <input type="button" name="calc"  value="Результат" onclick="test1()">
+    </p>
+</form>
+<footer class="my-foot">
+    <address>
+        <a href="#">Пишите:mail@mail</a>
+    </address>
+    © Фамилия И.О.,год
+
+</footer>
+</body>
+</html>
