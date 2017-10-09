@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link  type="text/css" rel="stylesheet" href="dzstylecss.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="calcJS.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header class="top" >
+    <img src="webLogo.png" width="250" height="150" alt="picture">
+    <h1>Основы Web-технологий</h1>
+    <div class="top-menu">
+        <ul>
+            <li><a href="index-1.html">Главная</a></li>
+            <li>
+                <a  href="Web-2.html">Web-технологии</a>
+                <ul>
+                    <li><a href="HTML5-3.html" >HTML5</a></li>
+                    <li><a href="CSS3-4.html" >CSS3</a></li>
+                    <li><a href="JS-5.html" >JavaScript</a></li>
+           </ul>
+            </li>
+            <li><a href="calc-6.html">Калькулятор</a></li>
+            <li><a href="Test-7.html">Тест</a></li>
+        </ul>
+    </div>
+</header>
+</div>
+<form action="" name="calculator" class="calc"><div id="message"></div>
+    <table>
+        <tr>
+            <td colspan="5" class="text">
+                <input type="text"  id="display" value=""  maxlength="10"><!--дисплей-->
+            </td>
+        </tr>
+        <tr>
+            <td class="input_7"><input type="button" id="input_7" name="7" value="7" ></td>
+            <td class="input_8"><input type="button" id="input_8" name="8" value="8" ></td>
+            <td class="input_9"><input type="button" id="input_9" name="9" value="9" ></td>
+            <td class="div1"><input type="button" id="div" name="/" value="/" ></td>
+            <td class="c"><input type="button" id="c" name="c" value="c" ></td>
+
+        </tr>
+        <tr>
+            <td class="input_4"><input type="button" id="input_4" name="4" value="4" ></td>
+            <td class="input_5"><input type="button" id="input_5" name="5" value="5" ></td>
+            <td class="input_6"><input type="button" id="input_6" name="6" value="6" ></td>
+            <td class="mult1"><input type="button" id="mult" name="*" value="*" ></td>
+            <td class="minusplus1"><input type="button" id="minusplus" name="&plusmn;" value="&plusmn;" ></td>
+        </tr>
+        <tr>
+            <td class="input_1"><input type="button" id="input_1" name="1" value="1"></td>
+            <td class="input_2"><input type="button" id="input_2" name="2" value="2"></td>
+            <td class="input_3"><input type="button" id="input_3" name="3" value="3"></td>
+            <td class="sub1"><input type="button"  id="sub"  name="-" value="-"></td>
+            <td rowspan="2" class="equally"><input type="button" id="equally" name="equally" value="="></td>
+        </tr>
+
+        <tr >
+            <td colspan="2" class="zero"><input type="button" id="input_0" name="0" value="0"></td>
+            <td class="plus1"><input type="button"   id="plus" name="+" value="+"></td>
+            <td class="dot1"><input type="button" name="." id="dot"  value="."></td>
+
+        </tr>
+    </table>
+
+</form>
+
+<footer class="my-foot">
+    <address>
+        <a href="#">Пишите:mail@mail</a>
+    </address>
+    © Фамилия И.О.,год
+
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* тело сайта    */
+body{
+    background:url("backgroundbody.jpg") no-repeat ;/* фоновая картинка, не повторяеться  */
+    background-size: cover;/* растягиваеться на всю страницу */
+    font-family: Arial;/* шрифт текста на странице */
+
+}
+/* лаготип сайта  */
+img{
+    float: left; /* обтекание текста по правую сторону */
+}
+/* название сайта */
+h1{
+
+    bottom: 70px;/* отступ снизу */
+    left: 300px;/*отступ слева  */
+}
+
+/* общие стили для классов: */
+.top,
+.web-subject,
+.my-foot,
+.term,
+.my-block,
+.my-css,
+.my-js,
+.calc,
+.my-test,
+.wrapper{
+    background-color: #E0FFFF;/* фон блоков */
+    border-radius: 10px;/* закругленные углы */
+    margin-top: -0.1em;/* отступ сверху */
+    margin-bottom: 0;/*отстур снизу */
+    padding: 8px; /*внутренний отступ  */
+    max-width: 1000px;/*максимальная ширена   */
+    margin-left: auto;/*вненший отступс лева   */
+    margin-right: auto;/*внешний отступ с права */
+
+
+}
+
+/* класс страницы index-1.html */
+.web-subject{
+    text-align: justify;/*выравнивание по центру */
+    padding: 5px;/* ширина */
+
+
+}
+
+
+/* класс нижнего блока(нижний колонтитул) сайта  */
+.my-foot{
+    text-align: center;/*выравнивание текста поцентру   */
+}
+
+/*********** стили для калькулятора*************/
+.calc table {
+     display: table;/* Определяет, что элемент является блочной таблицей */
+     margin: 0 auto;/*внешний отступ */
+     clear: both;/*Отменяет обтекание элемента одновременно с правого и левого края*/
+}
+
+.calc table tr td input{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    border-radius: 5px;
+    text-align: center;/* выравнивание цифт   */
+    width: 60px;/* ширина кнопок   */
+    height: 30px;/*высота кнопок    */
+    border: none;
+}
+/* стиль для понели ввода цифр   */
+.calc table .text input{
+    width: 315px;/* ширина кнопок   */
+    text-align: right;/* вводим текст с права  */
+}
+/***************************************************************************/
+/*Смена цвета при наведении на клавишу */
+.calc table .zero:hover input {background:#00FFFF;}
+
+.calc table .input_1:hover input {background:#FF69B4;}
+.calc table .input_2:hover input {background:#00FF00;}
+.calc table .input_3:hover input {background:#20B2AA;}
+
+.calc table .input_4:hover input {background:#EE82EE}
+.calc table .input_5:hover input {background:#7FFF00;}
+.calc table .input_6:hover input {background:#00FA9A;}
+
+.calc table .input_7:hover input {background:#9400D3;}
+.calc table .input_8:hover input {background:#32CD32;}
+.calc table .input_9:hover input {background:#4682B4;}
+
+
+.calc table .dot1:hover input {background:#FFFF00;}
+.calc table .div1:hover input {background:#FF6347;}
+.calc table .plus1:hover input {background:#FF7F50;}
+.calc table .mult1:hover input {background:#FFA07A;}
+.calc table .minusplus1:hover input {background:#9ACD32;}
+.calc table .sub1:hover input {background:#4169E1;}
+.calc table .c:hover input {background:#6A5ACD;}
+
+.calc table .text:hover input{background:#F4A460;}
+/***************************************************************************/
+/*  стиль для кнопки "="  */
+.calc table .equally input {
+    height: 65px;/* высота кнопки */
+
+}
+/* меняет стиль при наведении для кнопки "="  */
+.calc table .equally:hover input {
+
+    background:#FFA500;
+}
+/* стиль для кнопки "0"   */
+.calc table .zero input {
+    width: 125px;/* ширина кнопки */
+}
+
+/* класс страницы HTML5_3.html */
+.my-block{
+    text-align: justify;/* выравнивание текста на всю ширену блока */
+    font-size: 16px;/*размер шрифта*/
+    padding: 5px;/*Внутренний отступ*/
+}
+
+/* класс страницы HTML5_3.html */
+.my-additionally{
+    font-size: 12px;/*размер шрифта*/
+    float: right; /* Обтекание врезки по правому краю */
+    width: 200px; /* Ширина врезки */
+    background: #9FD0EA; /* Цвет фона */
+    padding: 5px; /* Поля вокруг картинки */
+    margin: 5px; /* Отступы вокруг рисунка */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    text-align: justify;/* выравнивание текста на всю ширену блока*/
+}
+/*********** Оформление меню**********/
+
+.top-menu ul {
+    display: flex;
+    max-width: 50%;
+}
+.top-menu li{
+    position:relative;/* относительно его исходного места*/
+    display:inline-block;/*Выстраиваем пункты в ряд*/
+    list-style:none;/*Убираем маркер*/
+    background:#87CEFA;/*Цвет фона для пункта*/
+    flex-grow: 1;/* какую часть свободного пространства может занять контейнер, в соотношении с другими контейнерами. */
+
+}
+.top-menu li:hover{
+    background:#B0E0E6;/*Цвет фона при наведение на пункт*/
+}
+.top-menu li a{
+    display:block; /*Элемент показывается как блочный*/
+    padding:10px 7px;/*Отступы для пункта*/
+    text-align: center;/* выравнивание текста  */
+    color:#222;/*Цвет шрифта в пункте*/
+
+    text-decoration:none;/*Убираем подчеркивание*/
+
+    /*width:120px; Ширина выпадающего меню*/
+
+}
+.top-menu li ul{
+    position:absolute;/*позиционирование   */
+    display:none;/*Прячем выпадающее меню*/
+    padding-left:0;/*внутренний отступ с лева*/
+    padding-top:3px;/*Отступ сверху у выпадающего меню*/
+}
+.top-menu li ul li {
+    display: block;/*Элемент показывается как блочный*/
+}
+.top-menu li:hover ul{
+    display:block;/*Показываем выпадающее меню при наведение*/
+    left:0; /*от левого края исходного положения элемента*/
+
+}
+/*******************************************************/
